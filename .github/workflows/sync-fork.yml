@@ -42,7 +42,7 @@ jobs:
       - name: Merge upstream into fork
         run: |
           git checkout $TARGET_BRANCH
-          git merge --ff-only upstream/$UPSTREAM_BRANCH
+          git merge upstream/$UPSTREAM_BRANCH
 
       - name: Push changes
         run: |
